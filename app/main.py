@@ -12,5 +12,7 @@ def copy_file(command: str) -> None:
                   as file_in, open(copied_file, "w") as file_out):
                 for line in file_in:
                     file_out.write(line)
+        else:
+            print("Invalid command")
     else:
         print("Invalid command")
